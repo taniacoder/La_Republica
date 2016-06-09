@@ -1,0 +1,90 @@
+@mixin background{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@mixin t-shadow{
+	color: white;
+	font-weight: bolder;
+	text-shadow: 1px 2px 0 #000;
+}
+@mixin sombra{
+	-webkit-box-shadow: inset 0px -73px 103px -5px rgba(26,25,26,1);
+	-moz-box-shadow: inset 0px -73px 103px -5px rgba(26,25,26,1);
+	box-shadow: inset 0px -73px 103px -5px rgba(26,25,26,1);
+}
+@mixin texto-white{
+	display: flex;
+	align-items: flex-end;
+	padding: 2% 12% 2% 4%;
+	font-family: $titulo1;
+}
+@mixin icon{
+	background-color: white;
+	padding: 0 6% 1%;
+	.icono-circle{
+		margin-top: -35px;
+		margin-bottom: 15px;
+	}
+}
+@mixin title($bg-color, $size, $porcentaje){
+	height: 5px;
+	background: $bg-color;
+	margin-bottom: $porcentaje;
+	span{
+		background: $bg-color;
+		color: white;
+		font-family: $titulo2;
+		font-size: $size;
+		padding: 5px 10px;
+		position:relative;
+		z-index: 100;
+	}
+}
+@mixin color($color, $color1){
+	p{
+		font-family: $titulo1;
+		margin-top: 8px;
+		a{
+			color: $color;
+		}
+	}
+	hr{
+		border: 3px solid $color1;
+		margin: 0 auto;
+	}
+}
+@mixin border-image($size){
+	.borde-gris{
+		border: $size solid $gristxt;
+	}
+}	
+@mixin especial-title($image){
+	background-image: url($image);
+	@include background;
+	height: 30vh;
+	padding: 3%;
+	margin-bottom: 5%;
+	display: flex;
+	align-items: flex-end;
+	.bg-text{
+		color: $black;
+		width: 100%;
+		font-family: $titulo1;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 3% 6%;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+}
+@mixin enlace-red{
+	display: block;
+	color: #BA1414;
+	font-size: 1.1em;
+	font-weight: 600;
+	margin: 4% auto;
+	font-family: $titulo1;
+	&:hover{
+		color: $red;
+	}
+}
+

@@ -1,0 +1,117 @@
+mixin redes
+    a(href="#")
+        img.red(src="./assets/image/s-icons/facebook.png", alt="")
+    a(href="#")
+        img.red(src="./assets/image/s-icons/twitter.png", alt="")
+    a(href="#")
+        img.red(src="./assets/image/s-icons/g-plus.png", alt="")
+mixin enlace(numero, nombre)
+    +redes
+    img.point(src="./assets/image/bullet.gif", alt="")
+    img.ico-comment(src="./assets/image/ico_comment.png", alt="")
+    a.t-small(href="#")= numero
+    img.point(src="./assets/image/bullet.gif", alt="")
+    a.t-small(href="#")= nombre
+mixin emma
+    p.small Hace 1 hora 12 mins
+    a.subtitle(href="#") Emma Watson protagonizará 'La bella y la bestia' | VIDEO
+    .row.last-news
+        .col-md-4.col-sm-4.col-xs-12
+            img.image-width(src="./assets/image/img_news.jpg", alt="")
+        .col-md-8.col-sm-8.col-xs-12
+            p La actriz Emma Watson fue confirmada por Disney como la protagonista de 'La bella y la bestia' con la versión de carne y hueso.
+            +enlace("10", "ESPECTÁCULOS")
+            img.point(src="./assets/image/bullet.gif", alt="")
+            a.icon(href="#")
+                i.fa.fa-youtube-play
+    hr(width="100%")
+mixin roque
+    p.small Hace 1 hora 12 mins
+    a.subtitle(href="#") Roque Benavides respalda proyecto Tía María y espera que Conga se socialice
+    .row.last-news 
+        .col-md-4.col-sm-4.col-xs-12
+            img.image-width(src="./assets/image/img_news.jpg", alt="")
+        .col-md-8.col-sm-8.col-xs-12
+            p Zenaida Condori Contreras Arequipa para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...
+            +enlace("0", "AREQUIPA")
+    hr(width="100%")
+mixin youtube
+    p.small Hace 1 hora 12 mins
+    a.subtitle(href="#") Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS
+    .row.last-news
+        .col-md-4.col-sm-4.col-xs-12
+            img.image-width(src="./assets/image/img_news.jpg", alt="")
+        .col-md-8.col-sm-8.col-xs-12
+            p La actriz Emma Watson fue confirmada por Disney como la protagonista de 'La bella y la bestia' con la versión de carne y hueso.
+            +enlace("10", "ESPECTÁCULOS")
+            img.point(src="./assets/image/bullet.gif", alt="")
+            a.icon(href="#")
+                i.fa.fa-camera
+    hr(width="100%")
+
+mixin madrid
+    p.small Hace 1 hora 12 mins
+    a.subtitle(href="#") Real Madrid: Cristiano ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid
+    .row.last-news
+        .col-md-4.col-sm-4.col-xs-12
+            img.image-width(src="./assets/image/img_news.jpg", alt="")
+        .col-md-8.col-sm-8.col-xs-12
+            p Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición a llegado a la...
+            +enlace("0", "AREQUIPA")
+    hr(width="100%")  
+mixin titulares
+    +emma
+    +roque
+    +youtube
+    +madrid
+mixin noticia(logo, imagen, texto, texto1, texto2, texto3, enlace)
+    .box
+        img.logo(src=logo, alt="")
+        .row
+            .col-md-5
+                img.image-width.borde-gris(src=imagen, alt="")
+            .col-md-7
+                a(href="#")=texto
+        .row
+            .col-md-5
+                img.image-width(src=imagen, alt="")
+            .col-md-7
+                a(href="#")=texto1
+        .row
+            .col-md-5
+                img.image-width(src=imagen, alt="")
+            .col-md-7
+                a(href="#")=texto2
+        .row
+            .col-md-5
+                img.image-width(src=imagen, alt="")
+            .col-md-7
+                a(href="#")=texto3
+        p.text-center Más en 
+            a(href="#")= enlace
+        hr(width=" 150px")
+mixin blog(texto)
+    .row
+        .col-md-3.col-sm-4.col-xs-4
+            .box-sombra
+                img.thumbnail.image-width(src="./assets/image/img_blogueros.jpg", alt="")
+        .col-md-9.col-sm-8.col-xs-8.blog-texto
+            p Augusto Álvarez Rodrich
+            p=texto
+mixin columnista(image, nombre, texto)
+    .text-center
+        .box-sombra
+            img.thumbnail(src=image, alt="")
+        a(href="#")=nombre
+        p 
+            strong= texto
+mixin columnista-group
+    +columnista("./assets/image/img-columnistas.jpg", "Mario Vargas Llosa", "Megarrenuncia apulpinante")
+    +columnista("./assets/image/img_blogueros.jpg", "Augusto Álvarez Rodrich", "Respuest a una derrota estridente")
+    +columnista("./assets/image/img-columnistas.jpg", "Mario Vargas Llosa", "Megarrenuncia apulpinante")
+    +columnista("./assets/image/img_blogueros.jpg", "Augusto Álvarez Rodrich", "Respuest a una derrota estridente")
+    +columnista("./assets/image/img-columnistas.jpg", "Mario Vargas Llosa", "Megarrenuncia apulpinante")
+    +columnista("./assets/image/img_blogueros.jpg", "Mario Vargas Llosa", "Megarrenuncia apulpinante")
+mixin input-radio(name, text, texto)
+    !='<input name='+name+' type="radio" value='+text+' id="check">'
+        label(for="check") #{texto}

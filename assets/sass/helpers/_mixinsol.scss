@@ -1,0 +1,13 @@
+@mixin mediabody {
+		h6 {
+			font-family: $titulo1;
+			font-weight: bold;
+			font-size: 13px;
+		}
+		h5 {
+			font-weight: bold;
+			font-size: 1.2em;
+			font-family: $titulo1;
+			color: #667885;
+		}
+}

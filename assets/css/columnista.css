@@ -1,0 +1,645 @@
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px !important;
+}
+
+header .header1 {
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  border-bottom: 1px solid #dadada;
+}
+
+header .header1 img {
+  width: 100%;
+  padding-bottom: 9px;
+}
+
+header .header1 ul {
+  padding-left: 0;
+  padding-bottom: 4px;
+  list-style-type: none;
+  font-family: "PT Sans";
+  font-size: 12.5px;
+  font-weight: bold;
+  color: #9A9A9A;
+}
+
+header .header1 ul a {
+  color: #9A9A9A;
+}
+
+header .header1 ul a:hover {
+  text-decoration: none;
+}
+
+header .header1 ul a li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+header .header1 .social {
+  padding-bottom: 4px;
+  padding-left: 35px;
+}
+
+header .header1 .social a {
+  text-decoration: none;
+}
+
+header .header1 .social a:hover {
+  text-decoration: none;
+}
+
+header .header1 .social a i {
+  font-size: 17px;
+}
+
+header .header1 .social a .azul {
+  color: #2A65A1;
+}
+
+header .header1 .social a .celeste {
+  color: #4BB7D9;
+}
+
+header .header1 .social a .amarillo {
+  color: #FFBF00;
+}
+
+header .header1 .social a .rojo {
+  color: #CA4638;
+}
+
+header .header1 .social a .naranja {
+  color: #FF8000;
+}
+
+header .header1 .social a .buscar {
+  color: #768596;
+  padding-right: 0px;
+}
+
+header .header1 .social a .buscar i {
+  font-size: 10px !important;
+  transform: rotate(88deg);
+  color: #768596;
+  margin-left: 3px;
+}
+
+header .header1 .social .btn-boletin {
+  background-color: #DD4A4A;
+  color: #fff;
+  padding: 1px 4px;
+  border-radius: 4px;
+  margin-right: 9px;
+}
+
+.buscar1 {
+  border-left: 2px ridge rgba(128, 128, 128, 0.25);
+  border-right: 2px ridge rgba(128, 128, 128, 0.25);
+  padding: 0px 4px;
+}
+
+.nopadd {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header2 {
+  padding: 25px 0px;
+}
+
+.header2 .col-md-6 {
+  padding-left: 0px;
+}
+
+.header2 .col-md-6 img {
+  padding: 14px 0px;
+  width: 50%;
+}
+
+.header2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header2 .marco-rojo {
+  border: 1px solid #F2F2F2;
+  border-bottom: 2px solid #8C0000;
+  padding: 17px 5px 6px;
+  text-align: center;
+  position: relative;
+  margin-right: 14px;
+}
+
+.header2 .marco-rojo h5 {
+  font-size: 13px;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+
+.header2 .marco-rojo .dom {
+  position: absolute;
+  top: -9px;
+  left: 92px;
+  background-color: #8C0000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "PT Sans";
+  padding: 1px 11px;
+}
+
+.header2 .marco-alterno {
+  border: 1px solid #F2F2F2;
+  border-bottom: 2px solid #768596;
+  padding: 17px 5px 6px;
+  text-align: center;
+  position: relative;
+}
+
+.header2 .marco-alterno h5 {
+  font-size: 13px;
+  font-family: "PT Sans";
+  font-weight: 700;
+}
+
+.header2 .marco-alterno .esp {
+  position: absolute;
+  top: -9px;
+  left: 56px;
+  background-color: #768596;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "PT Sans";
+  padding: 1px 11px;
+}
+
+.header2 .marco-gris {
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+  padding: 0px 0px 0px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+}
+
+.header2 .marco-gris h3 {
+  font-size: 16px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  margin: 0px;
+  padding: 10px 1px 0px;
+}
+
+.header2 .marco-gris p {
+  font-size: 13.5px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.header2 .marco-gris .im1 {
+  position: absolute;
+  left: -21px;
+  top: 0px;
+  background-color: black;
+  padding: 5px 14px 5px 3px;
+  border-radius: 4px 0px 0px 4px;
+  z-index: -87;
+  box-shadow: -2px 0px 3px 0px rgba(0, 0, 0, 0.34);
+}
+
+.header2 .marco-gris .im2 {
+  position: absolute;
+  right: -18px;
+  top: -8px;
+}
+
+header .navbar {
+  min-height: 31px;
+  background-color: #BA1414;
+  border-radius: 7px;
+  font-family: "PT Sans";
+}
+
+header .navbar .navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+header .navbar .navbar-collapse .nav {
+  padding-left: 0px !important;
+  padding-right: 0 !important;
+}
+
+header .navbar .navbar-collapse .nav li {
+  font-size: 10.8px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 2px;
+  border-left: 1px outset rgba(142, 0, 0, 0.87);
+}
+
+header .navbar .navbar-collapse .nav li:first-child {
+  border-left: 0px outset rgba(142, 0, 0, 0.87) !important;
+}
+
+header .navbar .navbar-collapse .nav li a {
+  padding: 10px 14px;
+  color: white;
+}
+
+header .navbar .navbar-collapse .navbar-nav {
+  margin: 0px 0px;
+}
+
+header .navbar .navbar-collapse .navbar-nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 12px;
+}
+
+.dropdown::after {
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  font-size: 16px;
+  top: 6px;
+  right: 0;
+  z-index: 9;
+  color: white;
+}
+
+header .nav2 {
+  background-color: #F2F2F2;
+  border-radius: 7px;
+  padding: 0px 26px 0px 0px;
+}
+
+header .nav2 .nopadd2 {
+  padding-right: 27px;
+  padding-left: 0px;
+  font-family: "PT Sans";
+}
+
+header .nav2 .nopadd2 .navigator1 {
+  background-color: black;
+  padding: 1px;
+  border-radius: 7px 0px 0px 7px;
+  text-align: center;
+  color: white;
+}
+
+header .nav2 .nopadd2 .navigator1 h5 {
+  font-family: 25px !important;
+}
+
+header .nav2 .navigator2 {
+  padding-left: 0px;
+}
+
+header .nav2 .navigator2 h6 {
+  padding: 0;
+  width: 100px;
+  font-family: "PT Sans";
+  font-size: 15px;
+}
+
+header .navbar-default .navbar-toggle:focus, header .navbar-default .navbar-toggle:hover {
+  background-color: #A70D0D;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+header .slick-slider {
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+header .slick-slider div::after {
+  color: #1f1f1f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 1px;
+  vertical-align: top;
+  line-height: 1px;
+}
+
+header .slick-slider div::after {
+  content: "\2022";
+  color: #768696;
+  font-size: 23px;
+  position: relative;
+  top: -33px;
+  right: -48px;
+}
+
+header .slick-slider h6 {
+  color: #1f1f1f;
+  display: block;
+  height: 40px;
+  margin: 0;
+}
+
+header .slick-slider .slick-list {
+  height: 19px;
+}
+
+header .slick-slider .slick-track {
+  height: 27px;
+}
+
+footer {
+  background-color: #E3E3E3;
+  font-size: 1em;
+  font-family: "PT Sans";
+}
+
+footer .cont-footer {
+  padding: 107px 5px 142px;
+}
+
+footer .cabecera {
+  padding: 30px;
+  border-bottom: 3px groove rgba(255, 255, 255, 0.17);
+}
+
+footer .cabecera a {
+  color: black;
+  display: table;
+}
+
+footer img {
+  width: 100%;
+  margin: 0 2px;
+}
+
+footer h5 {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+footer .final a {
+  color: gray;
+  border-right: 1px solid gray;
+  padding: 0px 5px;
+}
+
+footer .final a:last-child {
+  border-right: none;
+}
+
+footer .bck-gris:nth-child(2) {
+  font-weight: 400;
+  font-size: 13.5px;
+}
+
+.pad2 {
+  padding: 15px 0px;
+  text-align: center;
+  font-family: "PT Sans";
+}
+
+.border-right {
+  border-right: 3px ridge rgba(255, 255, 255, 0.41);
+}
+
+@media (max-width: 767px) {
+  .col-xs-12 {
+    text-align: center;
+  }
+  .border-right {
+    border-right: 0px ridge rgba(255, 255, 255, 0.41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont-footer {
+    padding: 25px 5px 50px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .border-right {
+    border-right: 0px ridge rgba(255, 255, 255, 0.41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont-footer {
+    padding: 25px 5px 50px !important;
+  }
+  .header2 {
+    padding: 25px;
+  }
+  .header2 .col-md-6 {
+    padding-left: 0px;
+  }
+  .header2 .col-md-6 img {
+    padding: 14px 0px;
+    width: 100%;
+  }
+}
+
+/*publicidad*/
+.container .butitulo {
+  padding-left: 1%;
+}
+
+.titulow h1 {
+  font-family: "PT Sans";
+  font-weight: bold;
+}
+
+.titulow h5.butitulo {
+  font-family: "Oswald";
+  color: #667885;
+}
+
+/*publicidad*/
+.publicidad {
+  position: absolute;
+  top: 20%;
+}
+
+.publicidad .banner1 {
+  position: fixed;
+  padding-left: 2%;
+}
+
+.publicidad .banner2 {
+  position: fixed;
+  right: 2%;
+}
+
+/**/
+.boton {
+  text-align: center;
+  padding: 3%;
+}
+
+.boton .btn.btn-default {
+  background-color: #AA1801;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 15px;
+}
+
+/*van rojo*/
+section .nav {
+  padding: 4px 40px;
+  background-color: #AA1801;
+}
+
+.nav-pills li {
+  padding: 10px 15px;
+}
+
+.nav-pills li a {
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: #fff;
+  background-color: #AA1801;
+  font-weight: bold;
+}
+
+.nav-pills li a:hover {
+  background-color: #D90000;
+}
+
+.nav-pills li.active {
+  padding: 10px 15px;
+}
+
+.nav-pills li.active a {
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: #fff;
+  background-color: #811101;
+  font-weight: bold;
+}
+
+.nav-pills li.active a:hover {
+  background-color: #811101;
+}
+
+/*boxes*/
+.bloques {
+  padding: 0 2%;
+}
+
+.borde {
+  border: 2px solid #F2F2F2;
+  padding: 10px;
+  margin-bottom: 5%;
+}
+
+.borde .tema {
+  padding: 10% 0 0%;
+  height: 110px;
+  font-family: "PT Sans";
+}
+
+.borde .tema h4 {
+  font-weight: bold;
+}
+
+.fond-gris {
+  background-color: #F2F2F2;
+  padding: 20px 13px;
+}
+
+.fond-gris .media-body h6 {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.fond-gris .media-body h5 {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: "PT Sans";
+  color: #667885;
+}
+
+.fond-gris img {
+  margin-bottom: 0px;
+}
+
+.fond-gris img .thumbnail {
+  border-radius: 0px;
+}
+
+.box {
+  position: relative;
+  z-index: 10;
+}
+
+.box:before, .box:after {
+  position: absolute;
+  content: "";
+  bottom: 8px;
+  left: 0px;
+  top: 82%;
+  width: 53%;
+  background: #777;
+  box-shadow: 0 7px 6px #777;
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.box:after {
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  right: 0px;
+  left: auto;
+}
+
+/*todos los columnistas*/
+.todos {
+  padding-top: 2%;
+}
+
+.todos .personas {
+  padding: 1% 1.3% 0%;
+}
+
+.bord {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.bord .media-body {
+  padding-bottom: 0px;
+}
+
+.bord .media-body h6 {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.bord .media-body h5 {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: "PT Sans";
+  color: #667885;
+}

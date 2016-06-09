@@ -1,0 +1,65 @@
+include mixins
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Blogs
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/font-awesome.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/slick-theme.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap.min.js')
+    script(type='text/javascript', src='assets/js/slick.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='assets/js/respond.js')
+    link(rel='stylesheet', type='text/css', href='assets/css/blog.css')
+  body
+    header
+        include header1
+        .header2
+            .container
+                .row
+                    .col-md-4.col-sm-4.col-xs-12
+                        a(href="#")
+                            img(src="./assets/image/logo-la-republica.jpg")
+                    .col-md-4.col-sm-4.hidden-xs
+                        a(href="#") 
+                            +mrojo
+                    .col-md-4.col-sm-4.hidden-xs
+                        a(href="#")
+                            .marco-gris
+                                h3 La corrupción, los orígenes
+                                p por: Gustavo Mohme Llona
+                                img.im1(src="./assets/image/img_editorial_text.jpg")
+                                img.im2(src="./assets/image/img_author.jpg")
+        include nav
+    include mixinsol.jade
+    section.publicidad
+        .banner1.hidden-xs.hidden-sm
+            img(src="assets/image/publi-1.jpg", alt="")
+        .banner2.hidden-xs.hidden-sm
+            img(src="assets/image/publi-2.jpg", alt="")
+    section.blogs
+        .container-fluid
+            .container
+                .row.titulow
+                    h1 Blogs
+                    h5.butitulo LO ÚLTIMO EN BLOG 
+                        img(src="assets/image/double-arrow-bottom.png", alt="")
+                .row.bloques
+                    +articulos
+                    +articulos
+                    +articulos
+                    +bloggers("LIBROS","Ya lo pasado, PASADO","Décimas Cosas")
+    include footer
+
+    script(src="../assets/js/bootstrap.min.js")
+    script(src="../assets/js/jquery.min.js")
+    script(src="../assets/js/slick.min.js")
+    

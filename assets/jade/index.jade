@@ -1,0 +1,277 @@
+include mixins
+doctype html
+html(lang='es-PE')
+    head
+        meta(charset='UTF-8')
+        title Home
+        link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', type='text/css', href='assets/css/font-awesome.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/slick.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/slick-theme.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/home.css')
+        script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+        script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+        script(type='text/javascript', src='assets/js/bootstrap.min.js')
+        script(type='text/javascript', src='assets/js/slick.min.js')
+        script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
+        script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
+        script(type='text/javascript', src='assets/js/respond.js')
+        script(type='text/javascript', src='assets/js/home.js')
+   
+    body
+        header
+            include header1
+            .header2
+                .container
+                    .row
+                        .col-md-4.col-sm-4.col-xs-12
+                            a(href="#")
+                                img(src="./assets/image/logo-la-republica.jpg")
+                        .col-md-4.col-sm-4.hidden-xs
+                            a(href="#") 
+                                +mgris
+                        .col-md-4.col-sm-4.hidden-xs
+                            a(href="#")
+                                .marco-gris
+                                    h3 La corrupción, los orígenes
+                                    p por: Gustavo Mohme Llona
+                                    img.im1(src="./assets/image/img_editorial_text.jpg")
+                                    img.im2(src="./assets/image/img_author.jpg")
+            include nav
+        include mixinmilu.jade
+        section.publicidad
+            .banner1.hidden-xs.hidden-sm
+                img(src="assets/image/publi-1.jpg", alt="")
+            .banner2.hidden-xs.hidden-sm
+                img(src="assets/image/publi-2.jpg", alt="")
+        section.title
+            .container
+                .row.first-title
+                    img.image-width(src="./assets/image/banner-header.jpg", alt="")
+                    h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+                .text-center
+                    +redes
+                    img.point(src="./assets/image/bullet.gif", alt="")
+                    span.t-small Hace 12 minutos
+                    img.point(src="./assets/image/bullet.gif", alt="")
+                    a.t-small(href="#") POLÍTICA
+                .row.text-left
+                    .col-md-6.col-sm-6.col-xs-12
+                        .principal.sombra
+                            a(href="#") JNE impulsará campaña en favor de la aprobación de la Reforma Electoral
+                    .col-md-6.col-sm-6.col-xs-12
+                        .secundario.sombra
+                            a(href="#") Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/.3 000 millones | FOTOS
+                        .secundario.sombra
+                            a(href="#") Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO
+        section.slider
+            .container
+                div.sidebar-title.text-center
+                    span COLUMNISTAS
+                div.slider-col
+                    +columnista-group
+                    +columnista-group
+                    +columnista-group
+                    .control
+                        .next
+        section.destacado
+            .container
+                .row
+                    .col-md-8.col-sm-8.col-xs-12
+                        .row.text-center
+                            .col-md-6.col-sm-6.col-xs-12
+                                .titular
+                                    h4 Mercado de Pases 2015
+                                    .image-1.sombra 
+                                        a(href="#").text-left Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos
+                                    .texto-todo
+                                        p Todo sobre 
+                                        a(href="#") Mercado de Pases 2015
+                            .col-md-6.col-sm-6.col-xs-12
+                                .titular
+                                    h4 Régimen laboral juvenil
+                                    .image-2.sombra
+                                        a(href="#").text-left Ollanta Humala: Los que han perdido, más allá de tambores y panderetas, son 2 millones de jóvenes | VIDEO
+                                    .texto-todo
+                                        p Todo sobre 
+                                        a(href="#") Régimen laboral juvenil
+                        .row.text-center
+                            .col-md-6.col-sm-6.col-xs-12
+                                .titular
+                                    h4 Champions League
+                                    .image-3.sombra 
+                                        a(href="#").text-left ¿Podrá el Real Madrid conseguir la 'Undécima'?
+                                    .texto-todo
+                                        p Todo sobre
+                                        a(href="#") Champions League
+                            .col-md-6.col-sm-6.col-xs-12
+                                .titular
+                                    h4 Super Bowl
+                                    .image-4.sombra 
+                                        a(href="#").text-left Super Bowl XLIX: New England Patriots se consagró campeón de la NFL al ganar 28-24 a Seahawks | VIDEO
+                                    .texto-todo
+                                        p Todo sobre 
+                                        a(href="#") Super Bowl
+                        .last-new-title
+                            span.last-icon ÚLTIMAS NOTICIAS
+                            img(src="./assets/image/double-arrow-bottom.png", alt="")
+                        +titulares
+                        +titulares
+                        +titulares
+                        +roque
+                        +youtube
+                        +madrid
+                        +titulares
+                        +titulares
+                        +roque
+                        +youtube
+                        +madrid
+                        +titulares
+                        +titulares
+                        +madrid
+
+                    .col-md-4.col-sm-4.col-xs-12
+                        img.image-width(src="./assets/image/banner-aside-home.jpg", alt="")
+                        .bg-sidebar.text-center
+                            .subscribe
+                                img.icono-circle(src="./assets/image/img_sucribe.png", alt="")
+                                p
+                                    strong Suscríbete 
+                                    span a nuestro boletín
+                                div.form-group
+                                    input.form-control(type="text")
+                                    button.btn.btn-default(type="submit") SUSCRIBIRSE
+
+                        .uno
+                            +noticia("./assets/image/logo_aweita.jpg", "./assets/image/img_aweita.jpg", "Juan román Riquelme, el adiós al 'Último 10' de Argentina", "Lewis Carroll: un día como hoy nació el autor de 'Alicia en..'", "Juan román Riquelme, el adiós al 'Último 10' de Argentina", "Gameplay de 'Dead Kings', el descargable premium de 'Assassin's", "Aweita.pe")
+                        .box-sidebar
+                            div.sidebar-title.text-center
+                                span FOTOS DESTACADAS
+                            img.img-width.borde-gray(src="./assets/image/img_fotodes_prominent.jpg", alt="")
+                            a(href="#") Líneas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace | 
+                            a(href="#") FOTOS
+                            .row
+                                .col-md-5
+                                    img.image-width.borde-gris(src="./assets/image/img_fotodes.jpg", alt="")
+                                .col-md-7
+                                    a(href="#") Uchuraccay: El pueblo que recibe con flores a quienes llegan a pie | 
+                                    a(href="#") FOTOS
+                            .row
+                                .col-md-5
+                                    img.image-width(src="./assets/image/img_fotodes.jpg", alt="")
+                                .col-md-7
+                                    a(href="#") Alianza Lima vs Fénix: íntimos ganaron 1-0 en "Noche Blanquiazul" | 
+                                    a(href="#") VIDEOS Y FOTOS
+                            .row
+                                .col-md-5
+                                    img.image-width(src="./assets/image/img_fotodes.jpg", alt="")
+                                .col-md-7
+                                    a(href="#") Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open | 
+                                    a(href="#") FOTOS
+                            hr
+                        .especiales-sidebar.text-center
+                            div.sidebar-title.text-center
+                                span ESPECIALES
+                            .bg-one
+                                .bg-text Régimen laboral juvenil
+                            .bg-two
+                                .bg-text COP20
+                            .bg-three
+                                .bg-text Concentración de Medios
+                            .bg-four
+                                .bg-text Especies peruanas en peligro de extinción
+                            hr
+                        .caricatura-sidebar.text-center
+                            div.sidebar-title.text-center
+                                span CARLINCATURA DEL DÍA
+                            p Carlincaturas 30-01-2015
+                            img.image-width(src="./assets/image/img_carlincatura_sd.jpg", alt="")
+                            a(href="#") Todas las Carlincaturas
+                            hr
+                        .blog-sidebar
+                            div.sidebar-title.text-center
+                                span NUESTROS BLOGUEROS
+                            +blog("Charlie Hebdo, historia que no debe repetirse")
+                            +blog("El único pulpín es Humala")
+                            +blog("Dios ha muerto... tengo las manos")
+                            +blog("El único pulpín es Humala")
+                            +blog("Charlie Hebdo, historia que no debe repetirse")
+                            +blog("El único pulpín es Humala")
+                            +blog("Dios ha muerto... tengo las manos")
+                            +blog("El único pulpín es Humala")
+                            a(href="#") Todas los blogs
+                            hr
+                        .edicion-sidebar
+                            div.sidebar-title.text-center
+                                span EDICIÓN IMPRESA
+                            h4.text-center La República - Lima
+                            img.image-width(src="./assets/image/img_impreso_sd_prominent.jpg", alt="")
+                            .row
+                                .col-md-5.col-sm-12.col-xs-5
+                                    img.image-width(src="./assets/image/img_impreso_sd.jpg", alt="")
+                                .col-md-7.col-sm-12.col-xs-7
+                                    p Extorsionan a menores en colegios
+                                    a(href="#") La República - Norte
+                            .row
+                                .col-md-5.col-sm-12.col-xs-5
+                                    img.image-width(src="./assets/image/img_impreso_sd.jpg", alt="")
+                                .col-md-7.col-sm-12.col-xs-7
+                                    p Lluvias en Arequipa inundan casas y causan caos en calles
+                                    a(href="#") La República - Norte
+                            .row
+                                .col-md-5.col-sm-12.col-xs-5
+                                    img.image-width(src="./assets/image/img_impreso_sd.jpg", alt="")
+                                .col-md-7.col-sm-12.col-xs-7
+                                    p El Ojo de Oblitas
+                                    a(href="#") Domingo
+                            hr(width="100%")
+                        .especiales-sidebar.text-center
+                            div.sidebar-title.text-center
+                                span INFOGRAFÍAS
+                            .bg-one
+                                .bg-text Histórico cierre de frontera
+                            .bg-two
+                                .bg-text Evolución de la pobreza e indigencia en América Latina
+                            hr(width="100%")
+                        .bg-sidebar.text-center
+                            .pregunta
+                                img.icono-circle(src="./assets/image/img_pregunta.png", alt="icon-pregunta")
+                                h4 La pregunta de hoy
+                                p.text-left ¿Cree usted que la premier Ana Jara debe renunciar?
+                                .radio
+                                    label
+                                        input(type="radio", name="blankRadio", value="option1") 
+                                        span Sí
+                                .radio
+                                    label
+                                        input(type="radio", name="blankRadio", value="option2") 
+                                        span No
+                                button.btn.btn-default(type="submit") VOTAR
+                                a(href="#") Ver resultados
+                            .pregunta-ayer
+                                h5 La pregunta de ayer
+                                p.text-left ¿Cree usted que se militarizó la conmemoración del fallo de La Haya en Lima?
+                                .bar-progress
+                                    .green 55%
+                                .bar-progress
+                                    .red-light 25%
+                                a(href="#") Ver preguntas pasadas
+                        .dos
+                            +noticia("./assets/image/logo_libero.jpg", "./assets/image/img_grid_especiales.jpg", "Fiorentina empató 1-1 en su visita al Genoa con gran actuación de Juan Vargas [VIDEO]", "Jefferson Farfán: Schalke 04 tampoco sabe cuándo volverá a las canchas [FOTOS]", "Barcelona vs. Villarreal: ganaron 3-2 con goles de Lionel Messi y Neymar por Liga BBVA [VIDEO]", "Perú cayó 3-1 ante Colombia por el hexagonal final del Sudamericano Sub 20 [VIDEO/FOTOS]", "Libero.pe")
+                        .tres
+                            +noticia("./assets/image/logo_popular.jpg", "./assets/image/img_video_destacado.jpg", "Joshua Ivanoff está loco por olor de Melissa Loza", "Corinthians: Paolo Guerrero dedica su gol a Alondra García", "Angie Arizaga es amenazada de muerte (VIDEO)", "Philip Seymour Hoffman: Un año sin el premiado actor (VIDEO)", "elPopular.pe")
+                        .cuatro
+                            +noticia("./assets/image/logo_wapa.jpg", "./assets/image/img_news_grid.jpg", "¿Cómo renovar el guardarropa de los más pequeños en este verano?", "Shakira y Piqué ¡Ya son padres por segunda vez!", "Ted 2: Mira el tráiler de la cinta", "Cómo usar zapatos altos sin dolor", "Wapa.pe")
+                        .bg-sidebar.text-center
+                            .enviar-foto
+                                img.icono-circle(src="./assets/image/img_reporteroc.png", alt="")
+                                h4 Reportero ciudadano
+                                img.image-width(src="./assets/image/img_sd_reporteroc.jpg", alt="")
+                                h6.text-left Estacionamiento indebido
+                                p.text-left ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+                            button.btn-red.btn.btn-default(type="submit") ENVIAR FOTOS
+                            a.enlace-red(href="#") Más fotos
+    include footer
+

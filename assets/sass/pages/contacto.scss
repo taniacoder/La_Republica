@@ -1,0 +1,143 @@
+@import "../helpers/_variables";
+@import "../layouts/_header";
+@import "../layouts/_footer";
+
+.texto1{
+
+	h1{
+		font:{
+			family: 'PT sans';
+			size: 62px;
+			weight: 700;
+		}
+		padding: 15px 0px;
+		text-align: center;
+	}
+	p{
+		font:{
+			family: 'PT sans';
+    		size: 18.1px;
+    	}
+	}
+}
+
+.inputs1{
+	.inputholder{
+		width: 100%;
+	    background-color: #EEEEEE;
+	    border-radius: 6px;
+	    padding: 7px 6px;
+    	margin: 13px 2px;
+    	font-family: $titulo1;
+    	font-size: 16px;
+    	border-left: 2px solid rgba(204, 204, 204, 0.8);
+	}
+	.col-md-6{
+		padding-right: 0px;
+		padding-left: 0px;
+		input{
+			display: inline-block;
+		}
+	}
+	h3{
+		font-weight: 700;
+	}
+}
+.ejem{
+	    text-align: right;
+}
+.optbox{
+	padding: 2px 0px 5px;
+	text-align: left;
+}
+.optbox2{
+	padding: 7px 0px 5px;
+}
+textarea{
+	width: 100%;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    padding: 7px 6px;
+    margin: 13px 2px;
+    font-family: $titulo1;
+    font-size: 16px;
+    border-left: 2px solid rgba(204, 204, 204, 0.8);
+    border-top: 2px ridge rgba(179, 179, 179, 0.62);
+    border-right: 0px;
+    border-bottom: 0px;
+    height: 150px;
+}
+section{
+	font-family: $titulo1;
+	padding-bottom: 50px;
+}
+label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.enviar{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 20px;
+	input{
+		background-color: black;
+	    color: white;
+	    padding: 5px 70px;
+	    border: none;
+	    border-radius: 4px;
+	}
+}
+
+@media \0screen\,screen\9 {
+    .custom-radio,
+    .custom-checkbox {
+        clip: auto;
+        position: static;
+    }
+
+    .custom-radio + label,
+    .custom-checkbox + label {
+        padding-left: 0;
+    }
+
+    .custom-radio + label:before,
+    .custom-checkbox + label:before {
+        display: none;
+    }
+}
+
+input[type="radio"]{
+ appearance: none;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ border: 1px solid #c8c6c6;
+ width: 15px;
+ height: 15px;
+ border-radius: 10px;
+ margin: 0 5px 0 0;
+ background-image: -webkit-gradient(linear, 34% 15%, 35% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+}
+ 
+input[type="radio"]#input-uno:checked{
+ background: $rednav;
+ border: 4px outset $white;
+}
+
+
+/*publicidad*/
+
+.publicidad {
+	position: absolute;
+	top: 20%;
+	.banner1{
+		position: fixed;
+		padding-left: 2%
+	}
+	.banner2{
+		position: fixed;
+		right: 2%;
+	}
+}
+/**/

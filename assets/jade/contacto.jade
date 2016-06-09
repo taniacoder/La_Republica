@@ -1,0 +1,90 @@
+include mixinsandra
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Home
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/font-awesome.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/contacto.css')
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap.min.js')
+    script(type='text/javascript', src='assets/js/slick.min.js')
+    script(type='text/javascript', src='assets/js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='assets/js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='assets/js/respond.js')
+  body
+    header
+        include header1
+        .header2
+            .container
+                .row
+                    .col-md-4.col-sm-4.col-xs-12
+                        a(href="#")
+                            img(src="./assets/image/logo-la-republica.jpg")
+                    .col-md-4.col-sm-4.hidden-xs
+                        a(href="#") 
+                            +mrojo
+                    .col-md-4.col-sm-4.hidden-xs
+                        a(href="#")
+                            .marco-gris
+                                h3 La corrupción, los orígenes
+                                p por: Gustavo Mohme Llona
+                                img.im1(src="./assets/image/img_editorial_text.jpg")
+                                img.im2(src="./assets/image/img_author.jpg")
+        include nav
+section.publicidad
+    .banner1.hidden-xs.hidden-sm
+        img(src="assets/image/publi-1.jpg", alt="")
+    .banner2.hidden-xs.hidden-sm
+        img(src="assets/image/publi-2.jpg", alt="")
+section
+    .container
+            .texto1
+                h1 Contáctese con nosotros
+                p Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para este sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.    
+                    .inputs1.col-md-8.col-md-offset-2.col-sm-12.col-xs-12
+                        +inputWithTextContent('Nombres Completos')
+                        br
+                        +inputWithTextContent('Correo electrónico')
+                        br
+                        +inputWithTextContent('Teléfonos')
+                        p (Opcional)
+                        h3 Eija un destinatario
+                        .col-md-6.col-xs-6
+                            .optbox
+                                +inputbox('intereses','rbipeliculas','Sugerencia para el sitio web')
+                            .optbox
+                                +inputbox('intereses','rbipeliculas', 'Dirección periodística')
+                            .optbox
+                                +inputbox('intereses','rbipeliculas','Dirección comercial')
+                            .optbox
+                                +inputbox('intereses','rbipeliculas','Cartas al director')
+                            .optbox
+                                +inputbox('intereses','rbipeliculas','Promociones y productos del diario')
+                            .optbox
+                                +inputbox('intereses','rbipeliculas','Archivo periodístico')
+                        .col-md-6.ejem.col-xs-6
+                            .optbox2
+                                span (Ej: funcionamiento y mejoras para el sitio)
+                            .optbox2
+                                span (Ej: Sugerencia para la nota de prensa)
+                            .optbox2
+                                span (Ej: Publicidad en diarios o sitios web)
+                            .optbox2
+                                span (Ej: denuncias, comentarios e impresiones)               
+                            .optbox2
+                                span (Ej: Promociones, tablet, etc)
+                            .optbox2
+                                span (Ej: Ediciones impresas/fotos)
+                        textarea(rows="10" cols="60"  placeholder="Mensaje" name="message")
+                        br
+                        .enviar
+                            input(type="submit" class="submit-btn button-link pull-right" value="ENVIAR")
+include footer

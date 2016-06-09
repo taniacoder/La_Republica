@@ -1,0 +1,18 @@
+mixin menu(enlace ,text)
+		a(href= enlace)= text
+
+mixin mrojo()
+	.marco-rojo
+		h5 HABLA LA LIDERESA DEL NACIONALISMO
+		.dom DOMINGO
+mixin mgris()
+	.marco-alterno
+		h5 TODO SOBRE LA CHAMPIONS LEAGUE
+		.esp ESPECIAL DE FÚTBOL
+mixin foolink(clase,url,texto)
+	a(href=url,class=clase) #{texto}
+mixin inputWithTextContent(name)
+	!='<input type="text"  class="inputholder"  placeholder="'+name+'"></input>'
+mixin inputbox(name, text, texto)
+	!='<input name='+name+' type="radio" value='+text+' id="input-uno">'
+		label(for="input-uno") #{texto}

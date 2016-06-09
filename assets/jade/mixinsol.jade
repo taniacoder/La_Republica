@@ -1,0 +1,79 @@
+mixin profesional(article,imagen,title)
+	.col-md-4.col-sm-12.col-xs-12 
+		.borde
+				.tema.text-center
+					span Lunes,14 de julio de 2015
+					h4= article
+				.fond-gris.media
+					.media-left.media-middle
+						.box
+							a(href="#")
+								img.thumbnail.media-object(src=imagen)
+					.media-body
+						h6.media-heading BLOG
+						h5=title
+mixin bloggers(title1,title2, title3)
+	.row
+		+profesional("El gol de la muerte","assets/image/blog_avatar_01.jpg",title1)
+		+profesional("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/blog_avatar_02.jpg",title2)
+		+profesional("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg",title3)
+mixin articulos
+	+bloggers("LIBROS","Ya lo pasado, PASADO","Décimas Cosas")
+	+bloggers("Y tú... ¿Ya hiciste click?","Educando con Amor Firme","Moda Ente Tendente")
+
+mixin list (letras1, letras2, letras3, letras4)
+	li(role='presentation')
+		a(href='#')= letras1
+	li(role='presentation')
+		a(href='#')= letras2
+	li(role='presentation')
+		a(href='#')= letras3
+	li(role='presentation')
+		a(href='#')= letras4
+
+mixin media (imagen,nombre,title)
+		.col-md-3.bord
+			.fond-gris.media
+				.media-left.media-middle
+					.box
+						a(href="#")
+							img.thumbnail.media-object(src=imagen)
+				.media-body
+					h6.media-heading=nombre
+					h5=title
+mixin filasmedia
+	.row.personas
+		+media("assets/image/blog_avatar_01.jpg","Framcisco Durand","Tiro al blanco")
+		+media("assets/image/img_author_columnista.jpg","Humberto","Cristal de Mira")
+		+media("assets/image/img_blogueros.jpg","Javier Agreda","Jaque perpetuo")
+		+media("assets/image/img_author_columnista.jpg","Javier Agreda","Jaque perpetuo")
+	.row.personas
+		+media("assets/image/blog_avatar_01.jpg","Framcisco Durand","Delito de Opinion")
+		+media("assets/image/img_author_columnista.jpg","Humberto","Actualidad Economica-Oscar")
+		+media("assets/image/img_blogueros.jpg","Javier Agreda","Mirada extrema")
+		+media("assets/image/img_author_columnista.jpg","Javier Agreda","Defensa")
+//columnistas//
+	
+mixin columnistabox(article,imagen,nombre,title)
+	.col-md-4
+		.borde
+			.tema.text-center
+				span Lunes,14 de julio de 2015
+				h4= article
+			.fond-gris.media
+				.media-left.media-middle
+					.box
+						a(href="#")
+							img.thumbnail.media-object(src=imagen)
+				.media-body
+					h6.media-heading Nombre
+					h5=title
+mixin recuadro
+	.row
+		+columnistabox("El gol de la muerte","assets/image/img_author_columnista.jpg","Augusto Alvarez Rodrich","Claro y directo")
+		+columnistabox("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/img_blogueros.jpg","Mirko Laver","Observador")
+		+columnistabox("¿Cuál es tu queso favorito?","assets/image/blog_avatar_02.jpg","Aldo Miyashiro","Chino de mi barrio")
+	.row
+		+columnistabox("El gol de la muerte","assets/image/blog_avatar_01.jpg","Francisco Durand","Cristal de Mira")
+		+columnistabox("Dios ha muerto... tengo las manos cubiertas de sangre","assets/image/blog_avatar_02.jpg","Humberto Campodominico","Observador")
+		+columnistabox("¿Cuál es tu queso favorito?","assets/image/blog_avatar_03.jpg","Javier Agreda","Jaque Perpetuo")
